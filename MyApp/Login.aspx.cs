@@ -108,7 +108,7 @@ namespace MyApp
                 else
                 {
 
-                    if ((DateTime.Now - logintime).Minutes >= 5)
+                    if ((DateTime.Now - logintime).Minutes >= 1)
                     {
                         using (SqlCommand cmd2 = new SqlCommand(sql2, conn))
                             {

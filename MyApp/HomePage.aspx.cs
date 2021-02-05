@@ -141,7 +141,7 @@ namespace MyApp
                              password_changed = (DateTime)reader["dateOfBirth"];
                         }
                     }
-                    if ((DateTime.Now-password_changed).Minutes>15)
+                    if ((DateTime.Now-password_changed).Minutes>1)
                     {
                         lbl_pwdchange.Text = "Your password has exceeded the password age of 15 minutes, please change your password";
                         lbl_pwdchange.ForeColor = Color.Red;
